@@ -6,6 +6,10 @@ https://www.alura.com.br/curso-online-typescript-parte1
 
 https://www.alura.com.br/curso-online-typescript-parte2
 
+**TypeScript**
+
+O TypeScript é um superset da ES2015. Ele adiciona recursos de compilação e tipagem como, por exemplo, validação do código em tempo de compilação.
+
 **Requisitos**
 
 _O compilador do TypeScript utiliza a plataforma Node_
@@ -41,8 +45,16 @@ _Baixar o TypeScript_
 - _Criar arquivo tsconfig.json que dá as diretrizes de compilação dos arquivos ts para js para que o navegador possa interpretar_
 - _Adicionar  "compile": "tsc" ao package.json para executar script de complicação localizado na pasta node_modules/typescript/bin_
 - _A propriedade "noEmitOnError": true de compilerOptions impede a compilação para js enquanto ouver um erro de sintaxe ts_
+- _Automatizar Processo de Compilação VSCode adicionando ao package.json_
+
+
 
 **Compilação**
 
 `$ npm run compile
+`
+
+**Compilação assistida do TypeScript**
+
+`$ npm start
 `
