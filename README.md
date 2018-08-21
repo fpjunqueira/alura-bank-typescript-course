@@ -40,6 +40,7 @@ _Baixar o TypeScript_
 
 - _Criar arquivo tsconfig.json que dá as diretrizes de compilação dos arquivos ts para js para que o navegador possa interpretar_
 - _Adicionar  "compile": "tsc" ao package.json para executar script de complicação localizado na pasta node_modules/typescript/bin_
+- _A propriedade "noEmitOnError": true de compilerOptions impede a compilação para js enquanto ouver um erro de sintaxe ts_
 
 **Compilação**
 
