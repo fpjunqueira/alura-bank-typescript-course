@@ -48,7 +48,6 @@ _Baixar o TypeScript_
 - _Automatizar Processo de Compilação VSCode adicionando ao package.json_
 
 
-
 **Compilação**
 
 `$ npm run compile
@@ -58,3 +57,23 @@ _Baixar o TypeScript_
 
 `$ npm start
 `
+
+**RUN**
+
+Acessar pasta app:
+
+_Python_
+
+`$ sudo python -m SimpleHTTPServer 80
+`
+
+Acessar no navegador: localhost
+
+_Docker cointainer_ 
+
+`$ docker-compose up
+`
+
+**TODO**
+
+- docker-compose
