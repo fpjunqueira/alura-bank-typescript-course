@@ -48,6 +48,17 @@ _Baixar o TypeScript_
 - _Automatizar Processo de Compilação VSCode adicionando ao package.json_
 
 
+**Type Sscript Definition**
+
+_jQuery TSD_
+
+https://www.npmjs.com/package/@types/jquery
+
+` $ npm install @types/jquery@2.0.42 --save-dev
+`
+
+Obs: previne o uso de _declare var $_ que é uma variável global e implicaria no uso do tipo any para declaração de tipos jQuery.
+
 **Compilação**
 
 `$ npm run compile
