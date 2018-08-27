@@ -59,6 +59,19 @@ https://www.npmjs.com/package/@types/jquery
 
 Obs: previne o uso de _declare var $_ que é uma variável global e implicaria no uso do tipo any para declaração de tipos jQuery.
 
+
+**Lite Server**
+
+` $ npm install lite-server@2.3.0 --save-dev
+`
+
+
+**Concurrently**
+
+` $ npm install concurrently@3.4.0 --save-dev
+`
+
+
 **Compilação**
 
 `$ npm run compile
@@ -72,6 +85,12 @@ Obs: previne o uso de _declare var $_ que é uma variável global e implicaria n
 **RUN**
 
 Acessar pasta app:
+
+_Lite Server_
+
+`$ npm run server
+`
+
 
 _Python_
 
