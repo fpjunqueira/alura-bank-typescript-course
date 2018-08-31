@@ -11,10 +11,13 @@ System.register([], function (exports_1, context_1) {
                     this._escapar = escapar;
                 }
                 update(model) {
+                    const t1 = performance.now();
                     let template = this.template(model);
                     if (this._escapar)
                         template = template.replace(/<script>[\s\S]*<\/script>/g, '');
                     this._elemento.html(template);
+                    const t2 = performance.now();
+                    console.log(`método View.update(:model) executado em: ${t1 - t2} ms`);
                 }
             };
             exports_1("View", View);
