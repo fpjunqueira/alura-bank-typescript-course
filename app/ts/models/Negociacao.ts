@@ -1,3 +1,6 @@
+import { logarCriacaoDeClasse } from "../helpers/decorators/index";
+
+@logarCriacaoDeClasse()
 export class Negociacao {
 
     constructor(readonly data: Date, readonly quantidade: number, readonly valor: number) {}

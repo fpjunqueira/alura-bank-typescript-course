@@ -1,4 +1,7 @@
 import { Negociacao } from './Negociacao';
+import { logarCriacaoDeClasse } from "../helpers/decorators/index";
+
+@logarCriacaoDeClasse()
 export class Negociacoes {
 
     private _negociacoes: Negociacao[] = [];
