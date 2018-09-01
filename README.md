@@ -104,6 +104,20 @@ _Docker cointainer_
 `$ docker-compose up
 `
 
+**Executar API**
+
+_../api_
+
+
+`$ npm start
+`
+
+
+`$ curl localhost:8080
+`
+
+
+
 **TODO**
 
 - docker-compose
