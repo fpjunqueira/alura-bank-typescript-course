@@ -26,8 +26,6 @@ export class NegociacaoController {
     @throttle()
     adiciona() {
 
-        event.preventDefault();
-
         let data =new Date(this._inputData.val().replace(/-/g, ','));
 
         if (!this._ehDiaUtil(data)) {
