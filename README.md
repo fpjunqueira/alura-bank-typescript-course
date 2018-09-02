@@ -117,6 +117,18 @@ _../api_
 `
 
 
+**Plus**
+
+TypeScript e NodeJS.
+
+Quando se usa TS com NodeJS não é recomendável uso de:
+- "strictNullChecks": true
+- "noImplicitAny": true
+
+Esse parâmetros defem ser falsos para evitar erro de definição em módulos npm que possam ser utilizados no projeto.
+
+Veja um exemplo de TypsScript definition para módulos Node em ts_node.zip
+
 
 **TODO**
 

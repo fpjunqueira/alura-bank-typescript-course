@@ -1,17 +1,18 @@
 import { logarCriacaoDeClasse } from "../helpers/decorators/index";
-import { Imprimivel } from "./Imprimivel";
-import { Igualavel } from "./Igualavel";
+import { MeuObjeto } from "./MeuObjeto";
 
 @logarCriacaoDeClasse()
-export class Negociacao implements Imprimivel, Igualavel<Negociacao> {
+export class Negociacao implements MeuObjeto<Negociacao> {
 
     constructor(readonly data: Date, readonly quantidade: number, readonly valor: number) {}
 
     get volume() {
+        
         return this.quantidade * this.valor;
     }
 
     paraTexto(): void {
+
         console.log('Impresssão');
         console.log(
             `

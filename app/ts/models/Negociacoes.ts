@@ -1,10 +1,9 @@
 import { Negociacao } from './Negociacao';
 import { logarCriacaoDeClasse } from "../helpers/decorators/index";
-import { Imprimivel } from './Imprimivel';
-import { Igualavel } from './Igualavel';
+import { MeuObjeto } from './MeuObjeto';
 
 @logarCriacaoDeClasse()
-export class Negociacoes implements Imprimivel, Igualavel<Negociacoes> {
+export class Negociacoes implements MeuObjeto<Negociacoes> {
 
     private _negociacoes: Negociacao[] = [];
 
@@ -19,6 +18,7 @@ export class Negociacoes implements Imprimivel, Igualavel<Negociacoes> {
     }
 
     paraTexto(): void {
+        
         console.log('Impresssão');
         console.log(
             JSON.stringify(this._negociacoes)
