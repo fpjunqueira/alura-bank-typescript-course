@@ -33,6 +33,11 @@ System.register(["../helpers/decorators/index"], function (exports_1, context_1)
             Volume: ${this.volume}
             `);
                 }
+                ehIgual(negociacao) {
+                    return this.data.getDate() == negociacao.data.getDate()
+                        && this.data.getMonth() == negociacao.data.getMonth()
+                        && this.data.getFullYear() == negociacao.data.getFullYear();
+                }
             };
             Negociacao = __decorate([
                 index_1.logarCriacaoDeClasse()

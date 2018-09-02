@@ -1,9 +1,10 @@
 import { Negociacao } from './Negociacao';
 import { logarCriacaoDeClasse } from "../helpers/decorators/index";
 import { Imprimivel } from './Imprimivel';
+import { Igualavel } from './Igualavel';
 
 @logarCriacaoDeClasse()
-export class Negociacoes implements Imprimivel {
+export class Negociacoes implements Imprimivel, Igualavel<Negociacoes> {
 
     private _negociacoes: Negociacao[] = [];
 
@@ -22,5 +23,10 @@ export class Negociacoes implements Imprimivel {
         console.log(
             JSON.stringify(this._negociacoes)
         );
+    }
+
+    ehIgual(negociacoes: Negociacoes): boolean {
+
+        return JSON.stringify(this._negociacoes) == JSON.stringify(negociacoes);
     }
 }

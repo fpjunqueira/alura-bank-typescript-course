@@ -29,6 +29,9 @@ System.register(["../helpers/decorators/index"], function (exports_1, context_1)
                     console.log('Impresssão');
                     console.log(JSON.stringify(this._negociacoes));
                 }
+                ehIgual(negociacoes) {
+                    return JSON.stringify(this._negociacoes) == JSON.stringify(negociacoes);
+                }
             };
             Negociacoes = __decorate([
                 index_1.logarCriacaoDeClasse()
