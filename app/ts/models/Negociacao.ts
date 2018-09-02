@@ -1,7 +1,8 @@
 import { logarCriacaoDeClasse } from "../helpers/decorators/index";
+import { Imprimivel } from "./Imprimivel";
 
 @logarCriacaoDeClasse()
-export class Negociacao {
+export class Negociacao implements Imprimivel {
 
     constructor(readonly data: Date, readonly quantidade: number, readonly valor: number) {}
 
@@ -9,4 +10,15 @@ export class Negociacao {
         return this.quantidade * this.valor;
     }
 
+    paraTexto(): void {
+        console.log('Impresssão');
+        console.log(
+            `
+            Data: ${this.data},
+            Quantidade: ${this.quantidade},
+            Valor: ${this.valor},
+            Volume: ${this.volume}
+            `
+        );
+    }
 }

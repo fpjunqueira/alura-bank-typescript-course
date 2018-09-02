@@ -2,6 +2,7 @@ import { NegociacoesView, MensagemView } from '../views/index';
 import { Negociacoes, Negociacao } from "../models/index";
 import { domInject, throttle } from "../helpers/decorators/index";
 import { NegociacaoService } from "../service/index";
+import { imprime } from '../helpers/Utils';
 
 export class NegociacaoController {
 
@@ -27,7 +28,7 @@ export class NegociacaoController {
     @throttle()
     adiciona() {
 
-        let data =new Date(this._inputData.val().replace(/-/g, ','));
+        let data = new Date(this._inputData.val().replace(/-/g, ','));
 
         if (!this._ehDiaUtil(data)) {
             this._mensagemView.update('Somente negocições em dias úteis!');
@@ -41,6 +42,8 @@ export class NegociacaoController {
         );
 
         this._negociacoes.adiciona(negociacao);
+
+        imprime(negociacao, this._negociacoes);
 
         this._negociacoesView.update(this._negociacoes);
 

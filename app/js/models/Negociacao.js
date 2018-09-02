@@ -24,6 +24,15 @@ System.register(["../helpers/decorators/index"], function (exports_1, context_1)
                 get volume() {
                     return this.quantidade * this.valor;
                 }
+                paraTexto() {
+                    console.log('Impresssão');
+                    console.log(`
+            Data: ${this.data},
+            Quantidade: ${this.quantidade},
+            Valor: ${this.valor},
+            Volume: ${this.volume}
+            `);
+                }
             };
             Negociacao = __decorate([
                 index_1.logarCriacaoDeClasse()
